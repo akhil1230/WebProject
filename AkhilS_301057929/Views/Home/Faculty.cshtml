@@ -1,0 +1,45 @@
+﻿@model IEnumerable<AkhilS_301057929.Models.Faculty>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faculty</title>
+
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/CSS/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <h2 style="text-align:center">List of Faculty</h2>
+    <table align="center">
+        <thead>
+            <tr>
+                <th>Name</th>
+               
+                <th>Email</th>
+                
+                <th>Phone</th>
+              
+                <th>Department</th>
+              
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (AkhilS_301057929.Models.Faculty faculty in Model)
+            {
+            <tr>
+                <td>@faculty.FacultyName</td>
+               
+                <td>@faculty.Email</td>
+                
+                <td>@faculty.Phone</td>
+                
+                <td>@faculty.Department</td>
+            
+            </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

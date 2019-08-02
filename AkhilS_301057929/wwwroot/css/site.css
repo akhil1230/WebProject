@@ -1,0 +1,58 @@
+﻿#mainMenu {
+    margin: 10px;
+    width: 900px;
+    font-family: sans-serif;
+}
+
+    #mainMenu li {
+        display: block;
+        width: 120px;
+        float: left;
+        margin-left: 2px;
+        border: 2px solid #000;
+    }
+
+    #mainMenu a {
+        display: block;
+        padding: 3px;
+        text-decoration: none;
+        background-color: #fff;
+        color: #009;
+    }
+
+        #mainMenu a:hover {
+            background-color: #009;
+            color: #fff;
+        }
+
+body {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+}
+
+table, th, td {
+    border: 4px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+    h1.active {
+        text-align: left;
+        text-indent: 1.5em;
+    }
+
+    h1.header {
+        padding: 8px;
+        text-align: start;
+        background-color: #222;
+        border-color: #080808;
+        color: white;
+    }
+}

@@ -1,0 +1,64 @@
+﻿@model AkhilS_301057929.Models.Faculty
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add Faculty</title>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/CSS/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+
+    <form  asp-action="AddFaculty" method="post">
+        <h1>Enter Faculty Deatils</h1>
+        <div asp-validation-summary=" All"></div>
+        <table>
+
+            <tr>
+                <td>
+                    <label asp-for="FacultyName">Faculty Name:</label>
+                </td>
+                <td>
+                    <input asp-for="FacultyName" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label asp-for="Email">Faculty Email:</label>
+                </td>
+                <td>
+                    <input asp-for="Email" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label asp-for="Phone">Faculty phone:</label>
+                </td>
+                <td>
+                    <input asp-for="Phone" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label asp-for="Department">Department:</label>
+                </td>
+                <td>
+                    <input asp-for="Department" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan=2 align="center"> <button  type="submit">Add Faculty</button></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center"> <a asp-action="Faculty">List of Faculty</a></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

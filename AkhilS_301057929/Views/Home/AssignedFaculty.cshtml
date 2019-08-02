@@ -1,0 +1,35 @@
+﻿
+@model IEnumerable<AkhilS_301057929.Models.AssignFaculty>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AssignedFaculty</title>
+
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/CSS/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <h2>List of Assigned Faculty</h2>
+    <table align="center">
+        <thead>
+            <tr>
+                <th>Course Name</th>
+                <th>Faculty Name</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(AkhilS_301057929.Models.AssignFaculty assign in Model)
+            {
+                <tr>
+                    <td>@assign.CourseName</td>
+                    <td>@assign.FacultyName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿@model AkhilS_301057929.Models.Courses
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add Course</title>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/CSS/StyleSheet.css" rel="stylesheet" />
+   
+</head>
+<body>
+    <form asp-action="AddCourse" method="post" id="myForm">
+        <h1>Enter Course Deatils</h1>
+        <div asp-validation-summary=" All"></div>
+        <table>
+            <tr>
+                <td>
+                    <label asp-for="CourseCode">Course Code:</label>
+                </td>
+                <td>
+                    <input asp-for="CourseCode" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label asp-for="CourseName">Course Name:</label>
+                </td>
+                <td>
+                    <input asp-for="CourseName" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan=2 align="center"> <button type="submit">Add Course</button></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center"> <a asp-action="Courses">List of Courses</a></td>
+            </tr>
+        </table>
+    </form>
+ 
+</body>
+</html>

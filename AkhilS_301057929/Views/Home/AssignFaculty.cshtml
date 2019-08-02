@@ -1,0 +1,46 @@
+﻿@model AkhilS_301057929.Models.AssignFaculty
+@{
+    ViewData["Title"] = "AssignFaculty";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Assign Faculty</title>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/CSS/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <form asp-action="AssignFaculty" method="post">
+        <h1>Assign Faculty</h1>
+        <div asp-validation-summary=" All"></div>
+        <table>
+
+            <tr>
+                <td>
+                    <label asp-for="CourseName">Course Name:</label>
+                </td>
+                <td>
+                    <input asp-for="CourseName" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label asp-for="FacultyName">Faculty Name:</label>
+                </td>
+                <td>
+                    <input asp-for="FacultyName" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan=2 align="center"> <button type="submit">Assign Faculty</button></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center"> <a asp-action="AssignedFaculty">Assigned Faculties</a></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
